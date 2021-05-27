@@ -1,0 +1,137 @@
+\documentclass[10pt]{article} % Default font size
+
+ 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\thispagestyle{empty}
+ 
+\urlstyle{same}
+
+\input{structure.tex} % Include the file specifying document layout
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Куат Абылкасымов} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+% {\bf Address} \> Zakharova 50A, 18\\ % Address line 1
+% \> Almaty \\ % Address line 2
+{\bf Возраст: } \> 22 года \\ % Date of birth 
+{\bf Github:} \> \href{https://www.github.com/kuator}{www.github.com/kuator} \\ % Github
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Номер: } \> +7 (708) 284 3988 \\ % Mobile phone
+{\bf Почта: } \> \href{mailto:kuatabylkasymov@gmail.com}{kuatabylkasymov@gmail.com} \\ % Email address
+{\bf Сайт-визитка: } \> \href{https://kuator.github.io}{kuator.github.io} \\ % Site
+\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Образование}
+
+\tabbedblock{
+\bf{2016-2020} \> Бакалавр специальности "Информационные системы" - \href{http://www.kbtu.kz}{КБТУ} \\[5pt]
+\>GPA: 3.5\\
+}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT SECTION
+%----------------------------------------------------------------------------------------
+\section{Опыт работы}
+
+\job
+{Апр 2021-}{Май 2021}
+{\textbf{Место работы: }TOO "Control-Link" }
+{\textbf{Позиция}: Техник-программист. Tехнологии: PLC, OPCUA}
+\normalfont{\textbf{Обязанности}: Сбор и обработка данных с сервера OPCUA}
+
+\job
+{Янв 2020-}{Окт 2020}
+{\textbf{Место работы: }TOO "CodeBusters" }
+{\textbf{Позиция}: Бэкенд разработчик. Tехнологии: Django, DRF, Docker}
+\normalfont{\textbf{Обязанности}: Разработка платформы для школы-интерната IQanat}
+
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	IT/COMPUTING SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Персональные работы}
+
+
+\href{https://github.com/kuator/chachachat}{Chachachat}: Чат, построенный на Django и ReactJS. \\
+Для создания сокетов использовал django-channels на бэкенде, и WebSockets API на фронтэнде.\\
+Также использовал async await для неблокирующих вызовов. На фронтэнде используются React Hooks и Tailwindcss\\
+
+\href{https://github.com/kuator/customer-relations-management}{CRM}: CRM-система для мэнэджемента лидов и агентов с разделением на роли.\\
+В этом проекте использовал встроенный в Django движок шаблонов Jinja. \\
+
+\href{https://github.com/kuator/tcp-server}{TCP-server}: TCP server на C для лучшего понимания как работают сокеты,\\
+в чем разница между unix-сокетами и network-сокетами.
+
+
+\section{Навыки}
+
+\skillgroup{Web}
+{
+  Backend: Django(Django Rest Framework, Django Channels, Celery), Fastapi, Node.js(Express)\\
+  Frontend: React(React Hooks, Redux), CSS(Tailwindcss)
+}
+
+\skillgroup{Языки программирования}
+{
+  Python: asyncio, threading, GIL\\
+  Javascript: ES5, ES6\\
+  C++: для решения задач на Hackerrank\\
+  Lua: для скриптинга и для конфигураций
+}
+
+\skillgroup{Другие навыки}
+{
+  Linux: продвинутый пользователь\\
+  Docker: знакомство с базовыми командами\\
+  Git: знание на уровне решения merge conflict-ов\\
+  Databases: Postgresql, MongoDB
+}
+
+%------------------------------------------------
+
+\skillgroup{Среда разработки}
+{
+  OS: Linux Mint 20\\
+  SHELL: zsh\\
+  IDE: Vim
+}
+
+\skillgroup{О себе}
+{
+  Беру от жизни всё, девушка в супермаркете предложила \\ 
+  мне кусочек колбасы для дегустации, я взял два. \\ 
+  Люблю CSS анимации: \href{https://kuator.github.io/gh-pages/image-reveal-kinda}{ToothBrush},
+    \href{https://kuator.github.io/gh-pages/cloudmoon}{Cloudmoon},
+    \href{https://kuator.github.io/gh-pages/rain/}{Rain}
+}
+
+\end{document}
